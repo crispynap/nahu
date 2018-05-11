@@ -1,29 +1,33 @@
 #window_map {
   display: none;
 }
+
 #window_charactor {
   display: none;
 }
+
 #window_ground {
   position: relative;
-  top: 50px;
-  width: 65%;
-  height: calc(100% - 50px - 30px);
-  border: 1px solid #ddd;
+  top: 30px;
+  width: 70%;
+  height: calc(100% - 30px - 30px);
+  overflow: hidden;
 }
+
 #window_log {
   position: absolute;
   right: 0;
-  top: 50px;
-  width: 35%;
-  height: calc(65% - 50px);
+  top: 30px;
+  width: 30%;
+  height: calc(65% - 30px);
   border: 1px solid #ddd;
 }
+
 #window_buttons {
   position: absolute;
   right: 0;
   bottom: 30px;
-  width: 35%;
+  width: 30%;
   height: calc(35% - 30px);
   border: 1px solid #ddd;
 }
