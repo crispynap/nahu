@@ -7,7 +7,6 @@
   right:0;
   display: flex;
   flex-direction: column;
-  padding:1px;
 }
 
 .ground_row {
@@ -15,19 +14,68 @@
   display: flex;
   position: relative;
   width: 100%;
-  padding: 1px 0 0 1px;
-  margin-bottom: -2px;
 }
 
 
 .ground_cell {
   border: 1px solid #444;
   flex:1;
-  height: 100%;
   margin-left: -1px;
   margin-top: -1px;
 }
 
 .ground_creature{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+.ground_creature progress {
+  width: 90%;
+  max-width: 100px;
+  display: block;
+  margin: auto;
+  appearance: none;
+  -webkit-appearance: none;
+  height:10px;
+  margin-top: 4px;
+}
+
+.creature_img{
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 15px;
+}
+
+.health_bar::-webkit-progress-value{
+  background: #af273d;
+
+}
+.balance_bar::-webkit-progress-value{
+	background: #4e8421;
+}
+
+progress::-webkit-progress-bar {
+	background: #131312;
+	border-radius: 6px;
+}
+
+progress::-webkit-progress-value {
+	border-radius: 6px 6px 6px 6px;
+	margin-left: -1px;
+	height:100%
+}
+
+progress{
+  text-align:center;
+  position: relative;
+}
+
+progress:after {
+  content: attr(value) '/' attr(max);
+  font-size: 8px;
+  z-index: 1;
+  top:-17px;
+  position: relative;
 }
